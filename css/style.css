@@ -1,6 +1,5 @@
 /*--  f91bb2 f07a32 292c31
-background-image: linear-gradient(to right,#f91bb2, #f07a32) ;
-  }
+
 */
 
 body{
@@ -18,18 +17,25 @@ header{
     background-color: #f07a32;
 }
 
+.menu{
+    display: flexbox;
+    align-items: center;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
 
+}
 
 ul {
-width: 80%;
-margin-left: 10%;
-margin-right: 10%;
-
 list-style-type: none; 
 overflow: hidden;
 background-color: #fff;
 top: 0;
-width: 100%;
+width: 80%;
+margin-left: 10%;
+margin-left: 10%;
+
+
 }
   
 li {
@@ -44,9 +50,7 @@ padding: 14px 16px;
 text-decoration: none;
 }
 
-
 li a:hover:not(.active) {
-text-transform: capitalize;
 transform: scale(1.1);
 }
 
@@ -61,7 +65,6 @@ li a img{
 }
 
 .search-box{
-    
 
     background : #f5f5f5 ;
     height: 50px;
@@ -102,7 +105,7 @@ li a img{
 }
 
 .search-box:hover > .search-text{
-    width: 220px;
+    width: 150px;
     padding-left: 20px;
 }
 
@@ -163,3 +166,345 @@ li a img{
     background-color: #000;
 }
 
+#kits{
+    /*background-color: #f07a32;   */
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+}
+
+#kits h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    float: left;
+}
+
+#kits .titulo-kits button{
+    position: relative;
+    float: right;
+
+    margin-top: 5px;
+
+    background-image: linear-gradient(to right,#f91bb2 0%, #f07a32 75%) ;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 40px;
+}
+
+#kits .titulo-kits button:hover{
+    background-image: linear-gradient(to right,#f91bb2 50%, #f07a32 100%) ;
+    transition: 0.4s;
+    transform: scale(1.01);
+}
+
+#kits .kits-layout{
+    position: relative;
+    display: flex;
+    margin-top: 0px;
+
+    width: 100%;
+}
+
+#kits .kits-layout .kit{
+    width: 20%;
+    height: 500px;
+    margin: 30px 2.5% 30px 2.5%;
+}
+
+#kits .kits-layout .kit .kit-image{
+    background-color: #292c31;
+    height: 500px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 5px;
+}
+
+#kits .kits-layout .kit .kit-btn button{
+    width: 100%;
+    height: 40px;
+
+    border: 0;
+    border-radius: 5px;
+
+    background-color: #ef7637;
+}
+
+#feedback{
+    margin-top: 80px;
+    background-image: linear-gradient(to top,#ff1179 0%, #ef7637 100%) ;
+    padding: 10px 0px 10px 0px;
+}
+
+#feedback h2{
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#feedback p{
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#feedback-layout{
+    display: flex;
+    
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    position: relative;
+}
+
+#feedback-layout .feedback-image{
+    
+    display: inline-block;
+
+    width: 20%;
+    height: 300px;
+
+    margin: 0% 6.66% 0% 6.66%;
+
+    background-color: #ef7637;   
+}
+
+#objetivo{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    margin: 100px 10% 0 10%;
+
+    text-align: center;
+}
+
+#objetivo .underline{
+    margin-left: 33.3%;
+    margin-right: 33.3%;
+        
+    width: 33.5%;
+    position: relative;
+
+    height: 5px;
+
+    background-color: #f07a32;
+    border-radius: 5px;
+
+    box-shadow: -2px 2px #f91bb2;
+}
+
+#objetivo .icons-layout{
+    margin-top: 30px;
+    width: 100%;
+
+    position: relative;
+    display: flex;
+}
+
+#objetivo .icons-layout .objetivo-btn{
+    width: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+#objetivo .icons-layout .objetivo-btn button{
+    
+    width: 200px;
+    height: 200px;
+
+    border: 0;
+    border-radius: 50%;
+
+    background-color: #ef7a33;
+}
+
+#instagram{
+    margin-top: 50px;
+
+    background-color: #292c31;
+
+    position: relative;
+    
+    padding: 10px 10% 10px 10%;
+}
+
+#instagram .blog-titulo{
+    position: relative;
+    display: inline-block;
+
+    width: 100%;
+
+    color: #f5f5f5;
+}
+
+#instagram .blog-titulo h2{
+    float: left;
+}
+
+#instagram .blog-titulo button{
+    position: relative;
+    float: right;
+
+    margin-top: 5px;
+
+    background-image: linear-gradient(to right,#f91bb2 0%, #f07a32 75%) ;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 40px;
+}
+
+#instagram .blog-titulo button:hover{
+    background-image: linear-gradient(to right,#f91bb2 0%, #f07a32 50%) ;
+    transition: 0.4s;
+    transform: scale(1.01);
+}
+
+#instagram .underline{    
+    position: relative;
+    width: 200px;
+
+    height: 5px;
+
+    background-color: #f07a32;
+    border-radius: 5px;
+
+    box-shadow: 20px 10px #f91bb2;
+}
+
+#instagram .instagram-layout{
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+}
+
+#instagram .instagram-layout .instagram-image{
+    width: 30%;
+    height: 400px;
+
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+    background-color: #c0c0c0;
+} 
+
+#instagram .follow{
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+
+    font-weight: 80px;
+}
+
+#instagram .follow .link-instagram{
+    position: relative;
+    
+}
+
+#instagram .follow .link-instagram img{
+    width: 60px;
+}
+
+#Cadastro-email{
+    position: relative;
+    display: inline-block;
+
+    width: 100%;
+
+    padding: 30px 10% 20px 10%;
+    margin: 20px 0 20px 0;
+
+    color: #f5f5f5;
+
+    background-color: #ff0f7c;
+}
+
+#Cadastro-email .texto-email p{
+        float: left;
+        
+        font-weight: bold;
+}
+
+#Cadastro-email form {
+    float: right;
+
+    background-color: #fff;
+    padding: 4px;
+
+    border-radius: 10px;
+  }
+  
+#Cadastro-email  form > input {
+    border: none
+  }
+  
+#Cadastro-email  form > button {
+    background: #16fa1f;
+    border: none;
+    color: #fff;
+    padding: 4px 10px;
+
+    border-radius: 10px;
+  }
+
+footer{
+    background-color: #1e0b11;
+    color: #fff;
+    padding: 10px 10% 5% 10%;
+}
+
+footer h2{
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+footer .forma-de-pagamento{
+    
+    background-color: #292c31;
+    width: 100%;
+
+    position: relative;
+    display: inline-flex;
+}
+
+footer .forma-de-pagamento p{
+    float: left;
+    margin: 10px 50px;
+}
+
+footer .forma-de-pagamento img{
+    float: right;
+    background-color: #f07a32;
+    margin: 10px 20px 10px 20px;
+    width: 10%;
+}
+
+footer .outros{
+    margin-top: 30px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+footer .outros .Atendimento{
+    float: left;
+}
+
+footer .outros .menu-footer{
+    float: right;
+    margin-right: 40%;
+    position: relative;
+    display: block;
+}
+
+footer .outros .menu-footer a{
+    text-decoration: none;
+    color: #fff;
+}
