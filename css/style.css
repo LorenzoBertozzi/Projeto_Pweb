@@ -321,7 +321,7 @@ li a img{
     width: 100%;
 
     position: relative;
-    display: flex;
+    display: inline-flex;
 }
 
 #objetivo .icons-layout .objetivo-btn{
@@ -332,13 +332,19 @@ li a img{
 
 #objetivo .icons-layout .objetivo-btn button{
     
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 
     border: 0;
     border-radius: 50%;
 
     background-color: #ef7a33;
+}
+
+#objetivo .icons-layout .objetivo-btn img{   
+    width: 180px;    
 }
 
 #instagram{
