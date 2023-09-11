@@ -26,33 +26,51 @@ header{
 
 }
 
-ul {
-list-style-type: none; 
-overflow: hidden;
-background-color: #fff;
-top: 0;
-width: 80%;
-margin-left: 10%;
-margin-left: 10%;
-
+.menu ul{
+    list-style-type: none;
+    overflow: hidden;
+    top: 0;
+    
+    width: 50%;
 
 }
-  
-li {
-float: left;
+
+.menu ul li{
+    position: relative;
+    float: left;
+
 }
 
-li a {
-display: block;
-color: rgb(0, 0, 0);
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+.menu ul li a{
+    position: relative;
+    display: block;
+
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    
 }
 
-li a:hover:not(.active) {
-transform: scale(1.1);
+.menu ul li .active{
+    color: #fff;
 }
+
+.menu ul li a:hover:not(.active) {
+    transform: scale(1.1);
+}
+
+.menu .celular-nav1{    
+    float: left;
+    width: 75%;
+}
+
+.menu .celular-nav2{    
+    padding: 0;
+    display: inline-flex;
+    width: 25%;
+}
+
 
 li a img{
     height: 20px;
@@ -442,7 +460,9 @@ li a img{
   }
   
 #Cadastro-email  form > input {
-    border: none
+    background: none;
+    border: 0;
+    outline: 0;
   }
   
 #Cadastro-email  form > button {
