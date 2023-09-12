@@ -12,6 +12,9 @@ body{
 }
 
 header{
+    position: absolute;
+    width: 100%;
+    top: 0;
     text-align: center;
     color: #fff;
     background-color: #f07a32;
