@@ -8,7 +8,6 @@ body{
     border: 0px;
     background-attachment: fixed;
     background-color: #fff;
-
 }
 
 header{
@@ -286,25 +285,30 @@ li a img{
 
 #feedback-layout{
     display: flex;
+    flex-direction: inherit;
+    justify-content: center;
+    align-items: center;
     
-    width: 90%;
-    margin-left: 5%;
     margin-top: 20px;
     margin-bottom: 30px;
-
-    position: relative;
 }
 
-#feedback-layout .feedback-image{
-    
-    display: inline-block;
-
-    width: 20%;
+.cartaoFeedback{
+    background-color: #ef7637;
+    margin: 0 20px 0 20px;    
+    width: 300px;
     height: 300px;
 
-    margin: 0% 6.66% 0% 6.66%;
+    word-wrap: break-word;
+}
 
-    background-color: #ef7637;   
+.cartaoFeedback img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 50px 10px 10px;
+
+    float: left;
 }
 
 #objetivo{
@@ -369,86 +373,7 @@ li a img{
 
     position: relative;
     
-    padding: 10px 10% 10px 10%;
-}
-
-#instagram .blog-titulo{
-    position: relative;
-    display: inline-block;
-
-    width: 100%;
-
-    color: #f5f5f5;
-}
-
-#instagram .blog-titulo h2{
-    float: left;
-}
-
-#instagram .blog-titulo button{
-    position: relative;
-    float: right;
-
-    margin-top: 5px;
-
-    background-image: linear-gradient(to right,#f91bb2 0%, #f07a32 75%) ;
-    color: #fff;
-    border: 0;
-    border-radius: 5px;
-    padding: 5px;
-    font-weight: 40px;
-}
-
-#instagram .blog-titulo button:hover{
-    background-image: linear-gradient(to right,#f91bb2 0%, #f07a32 50%) ;
-    transition: 0.4s;
-    transform: scale(1.01);
-}
-
-#instagram .underline{    
-    position: relative;
-    width: 200px;
-
-    height: 5px;
-
-    background-color: #f07a32;
-    border-radius: 5px;
-
-    box-shadow: 20px 10px #f91bb2;
-}
-
-#instagram .instagram-layout{
-    position: relative;
-    display: flex;
-    margin-top: 40px;
-}
-
-#instagram .instagram-layout .instagram-image{
-    width: 30%;
-    height: 400px;
-
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-
-    background-color: #c0c0c0;
-} 
-
-#instagram .follow{
-    margin-top: 10px;
-    text-transform: capitalize;
-    color: #fff;
-    text-align: center;
-
-    font-weight: 80px;
-}
-
-#instagram .follow .link-instagram{
-    position: relative;
-    
-}
-
-#instagram .follow .link-instagram img{
-    width: 60px;
+    padding: 10px 5% 10px 5%;
 }
 
 #Cadastro-email{
