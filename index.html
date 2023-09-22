@@ -34,7 +34,7 @@
                 <a class="search-btn"><img src="assets/lupa.png" alt=""></a>
               </div>
             </li>
-            <li><a href="login.html"><img src="assets/login-image.png" alt="login"></a></li>
+            <li><a href="pages/login.html"><img src="assets/login-image.png" alt="login"></a></li>
             <li><a href="#carrinho"><img src="assets/cart.png" alt="carrinho"></a></li>
           </ul>
         </nav>
@@ -51,32 +51,10 @@
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
             <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
-            </div>
+            <div id="carousel-indicators" class="carousel-indicators"></div>
             
             <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="-------------------------" alt="Proteinas" class="d-block" style="width:80% ; height: 40%; margin-left: 10%;margin-right: 10%;">
-              </div>
-              <div class="carousel-item">
-                <img src="-------------------------" alt="Creatinas" class="d-block" style="width:80% ; height: 40%; margin-left: 10%;margin-right: 10%;">
-              </div>
-              <div class="carousel-item">
-                <img src="-------------------------" alt="Vitaminas" class="d-block" style="width:80% ; height: 40%; margin-left: 10%;margin-right: 10%;">
-              </div>
-              <div class="carousel-item">
-                <img src="-------------------------" alt="Acessórios" class="d-block" style="width:80% ; height: 40%; margin-left: 10%;margin-right: 10%;">
-              </div>
-              <div class="carousel-item">
-                <img src="-------------------------" alt="Pré-Treino" class="d-block" style="width:80% ; height: 40%; margin-left: 10%;margin-right: 10%;">
-              </div>
-            </div>
+            <div class="carousel-inner" id="carousel-inner"></div>
             
             <!-- Left and right controls/icons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" >
@@ -94,31 +72,7 @@
         <button>Explorar mais kit's</button>
       </div>
 
-      <div class="kits-layout">
-        <div class="kit">
-          <div class="kit-image">
-            <img src="" alt="kit1">
-          </div>
-          <div class="kit-btn"><button></button></div>
-        </div>
-        <div class="kit">
-          <div class="kit-image">
-            <img src="" alt="kit1">
-          </div>
-          <div class="kit-btn"><button></button></div>
-        </div>
-        <div class="kit">
-          <div class="kit-image">
-            <img src="" alt="kit1">
-          </div>
-          <div class="kit-btn"><button></button></div>
-        </div>
-        <div class="kit">
-          <div class="kit-image">
-            <img src="" alt="kit1">
-          </div>
-          <div class="kit-btn"><button ></button></div>
-        </div>
+      <div class="kits-layout" id="kits-layout"></div>
         
     </section>
 
