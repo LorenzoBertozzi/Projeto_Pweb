@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Fonte red hat display-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/login.css">
-    <title>Login | TeamSuplementos</title>
+    <title>Register | TeamSuplementos</title>
 </head>
 <body>
     <header>
         <h3>Máximo Potencial Atlético, <br>Saúde & Bem-estar</h3>
-        <a href="index.html">
-            <img src="assets/Logo.png" alt="Logo">
+        <a href="../index.html">
+            <img src="../assets/Logo.png" alt="Logo">
         </a>
         <div class="insta-div">
             <h3>Nós siga também no Instagram</h3>
@@ -25,37 +26,45 @@
                     <h3>@TeamSuplementos</h3>
                 </a>
             </div>
-        </div>  
+        </div>
     </header>
 
-    <section class="login-screen">
-        <section class="main-login">
-            <h1>Fazer Login</h1>
+    <section class="register-screen">
+        <section class="main-register">
+            <h1>Fazer cadastro</h1>
             <div class="field">
                 <div class="textfield">
-                    <label for="usuario">E-mail ou Telefone</label>
+                    <label for="name">Seu nome</label>
+                    <input type="text" name="name">
+                </div>
+                <div class="textfield">
+                    <label for="usuario">E-mail ou telefone</label>
                     <input type="text" name="usuario">
                 </div>
                 <div class="textfield">
                     <label for="senha">Senha</label>
                     <input type="password" name="senha">
-                    <button class="btn-login">Entrar</button>
+                </div>
+                <div class="textfield">
+                    <label for="confirm_senha">Confirme sua senha</label>
+                    <input type="password" name="confirm_senha">
+                    <button class="btn-login">Registrar</button>
                 </div>
             </div>
         </section>
 
         <section class="divisoria">
             <img src="assets/Line 4.png" alt="">
-            <h3>Novo por aqui ?</h3>
+            <h3>Já é registrado ?</h3>
             <img src="assets/Line 4.png" alt="">
         </section>
 
-        <section class="register">
-            <p>Venha fazer parte do time !</p>
-            <button onclick="tela_de_registro()">Registrar na Team Suplementos</button>
+        <section class="login">
+            <p>Acesse sua conta !</p>
+            <button onclick="logar()">Fazer Login</button>
             <script>
-                function tela_de_registro(){
-                    window.location.href="register.html";
+                function logar(){
+                    window.location.href="login.html";
                 }
             </script>
         </section>
@@ -86,6 +95,7 @@
             </div>
         </div>
     </footer>
+
 
 </body>
 </html>

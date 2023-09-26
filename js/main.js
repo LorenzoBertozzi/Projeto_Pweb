@@ -1,33 +1,33 @@
 const listaFeedbacks = [
     {
     id : 1,
-    srcImage : '../assets/download.jpg',
-    nomeUsuario : 'Macaco',
-    Comentario : 'hashhahhahahahhhashhahhahahahhhashhahhahahahh',
+    srcImage : '../assets/pfp.jpg',
+    nomeUsuario : 'usuario 1',
+    Comentario : 'Comentario deixado pelo usuario',
     },
     {
     id : 2,
-    srcImage : '../assets/macaco.jpg',
-    nomeUsuario : 'Macaco 2',
-    Comentario : 'hashhahhahahahhhashhahhahahahhhashhahhahahahh',
+    srcImage : '../assets/pfp.jpg',
+    nomeUsuario : 'usuario 2',
+    Comentario : 'Comentario deixado pelo usuario',
     },
     {
     id : 3,
-    srcImage : '../assets/logo.jpg',
-    nomeUsuario : 'Macaco 3',
-    Comentario : 'hashhahhahahahhhashhahhahahahhhashhahhahahahh',
+    srcImage : '../assets/pfp.jpg',
+    nomeUsuario : 'usuario 3',
+    Comentario : 'Comentario deixado pelo usuario',
     },
     {
     id : 3,
-    srcImage : '../assets/logo.jpg',
-    nomeUsuario : 'Macaco 3',
-    Comentario : 'hashhahhahahahhhashhahhahahahhhashhahhahahahh',
+    srcImage : '../assets/pfp.jpg',
+    nomeUsuario : 'usuario 4',
+    Comentario : 'Comentario deixado pelo usuario',
     },
     {
     id : 2,
-    srcImage : '../assets/macaco.jpg',
-    nomeUsuario : 'Macaco 2',
-    Comentario : 'hashhahhahahahhhashhahhahahahhhashhahhahahahh',
+    srcImage : '../assets/pfp.jpg',
+    nomeUsuario : 'usuario 5',
+    Comentario : 'Comentario deixado pelo usuario',
     }
 ];
 
@@ -52,7 +52,7 @@ for(const feedback of listaFeedbacks){
 const listaCarousel = [
     {
         id : 0 ,
-        srcImage : 'assets/sup1.jpg',
+        srcImage : '../assets/Carrossel-Whey.jpg',
         altImage : 'Proteinas'
     },
     {
