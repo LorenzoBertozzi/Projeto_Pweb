@@ -62,29 +62,23 @@ for(const feedback of listaFeedbacks){
 const listaCarousel = [
     {
         id : 0 ,
-        srcImage : '../assets/Carrossel-Whey.jpg',
+        srcImage : '../assets/carrossel/Carrossel - Whey.jpg',
         altImage : 'Proteinas'
     },
     {
         id : 1 ,
-        srcImage : 'assets/sup2.jpg',
+        srcImage : '../assets/carrossel/Carrossel - Creatinas.png',
         altImage : 'Creatinas'
     },
     {
         id : 2 ,
-        srcImage : 'assets/sup3.jpg',
+        srcImage : '../assets/carrossel/Carrossel - Cachorro.jpg',
         altImage : 'Vitaminas'
     },
     {
         id : 3,
-        srcImage : 'assets/sup4.jpg',
+        srcImage : '../assets/carrossel/Carrossel - Acessórios.jpg',
         altImage : 'Acessórios'
-    }
-    ,
-    {
-        id : 4,
-        srcImage : 'assets/sup5.jpg',
-        altImage : 'Pre-Treino'
     }
 ];
 
@@ -212,9 +206,11 @@ const linksNav = [
     {
         const menu =
         `
-            <li class="nav-item" ><a class="nav-link" href="${link.href}">${link.alt}</a></li>
+        <li class="nav-item">
+            <a class="nav-link" href="${link.href}">${link.alt}</a>
+        </li>
         `
-        document.getElementById("celular-nav1").innerHTML += menu;
+        document.getElementById("ul-nav-menu").innerHTML += menu;
     }
     const menu_footer =
     `
