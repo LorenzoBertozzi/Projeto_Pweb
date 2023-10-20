@@ -1,138 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <link rel="stylesheet" href="css/style.css">
-    
-    <title>Loja de Suplementos</title>
-    <link rel="shortcut icon" href="assets/icon.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Loja de Suplementos</title>
+  <link rel="shortcut icon" href="assets/icon.ico">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <p> Mande um direct "VIM PELO SITE" em nosso insta e ganhe R$20,00 </p>
-    </header>
 
-    <section class="menu">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand active" href="index.html"><img src="assets/logo_constancia.png" alt="logo" style="width: 100px; height: 100px;"></a>
-          <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-              aria-expanded="false" aria-label="Toggle navigation"></button>
-          <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0" id="ul-nav-menu"></ul>
-            <form class="d-flex my-2 my-lg-0">
-              <div class="search-box">  
-                <input type="text" class="search-text" placeholder="Pesquisar...">
-                <a class="search-btn"><img src="assets/lupa.png" style=" height: 30px;"></a>
-              </div>
-            </form>
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="##"><img src="assets/login-image.png" alt="login"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="##"><img src="assets/cart.png" alt="carrinho"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </section>
+  <header class="text-center rounded-bottom mx-5 " style="color: #fff;">
+    <p> Mande um direct "VIM PELO SITE" em nosso insta e ganhe R$20,00 </p>
+  </header>
 
-    <section class="titulo">
-        <h1>A "Loja de Suplementos" é o seu destino definitivo para alcançar</h1>
-        <h1 id="strong-text"> O Maximo Potencial Atletico e Saude & Bem-Estar</h1>
-        <p>Levamos voce do ponto A ao ponto B com uma consultoria personalizada visando seu objetivo final!</p>
-        <button>CTA-button</button>
-    </section>
+  <section id="menu-top" class="mb-2"></section>
 
-    <section id="Apresentação-itens">
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!--<section class="titulo">
+    <h3>A Constancia é o seu destino definitivo para alcançar</h3>
+    <h3 id="strong-text"> O Maximo Potencial Atletico e Saude & Bem-Estar</h3>
+    <p>Levamos voce do ponto A ao ponto B com uma consultoria personalizada visando seu objetivo final!</p>
+    <button>CTA-button</button>
+  </section>-->
 
-            <!-- Indicators/dots -->
-            <div id="carousel-indicators" class="carousel-indicators"></div>
-            
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner" id="carousel-inner"></div>
-            
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" >
-              <span class="carousel-control-prev-icon" ></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
-    </section>
+  <section id="Apresentação-itens"></section>
 
-    <section id="kits">
-      <div class="titulo-kits">
-        <h2>Kits dos mais vendidos</h2>
-        <button>Explorar mais kit's</button>
-      </div>
-
-      <div class="kits-layout" id="kits-layout"></div>
-        
-    </section>
-
-    <section id="feedback"></section>
-
-    <section id="objetivo">
-      <div>
-        <h2>QUAL SEU OBJETIVO ?</h2>
-        <div class="underline"></div>
-      </div>
-      <div class="icons-layout">
-        <div class="objetivo-btn">
-          <button><a href="-----------------"><img src="assets/objetive/Muscle.png" alt="Massa Muscular"></a></button>
-          <p>Massa Muscular</p>
-        </div>
-        <div class="objetivo-btn">
-          <button><a href="-----------------"><img src="assets/objetive/Measuring tape.png" alt="Emagrecimento"></a></button>
-          <p>Emagrecimento</p>
-        </div>
-        <div class="objetivo-btn">
-          <button><a href="-----------------"><img src="assets/objetive/Heart.png" alt="Qualidade de Vida"></a></button>
-          <p>Qualidade de Vida</p>
-        </div>
-        <div class="objetivo-btn">
-          <button><a href="-----------------"><img src="assets/objetive/Energy.png" alt="Energia" class="btn-energy"></a></button>
-          <p>Energia</p>
-        </div>  
-      </div>          
-    </section>
-
-    <section id="instagram">
-      <iframe id="frame" width="100%" height="500px" style="background-color: #292c31;"  src="https://www.instagram.com/constanciasuplementos/embed" frameborder="0"></iframe>
-    </section>
-
-    <section id="Cadastro-email">
-        <div class="texto-email">
-          <p>Cadastre seu E-mail e receba promoções e <br> novidades exclusivas da "Loja de Suplementos" </p>
-        </div>  
-          <form action='/' method='post'>
-            <input type='text' name='pesquisa' placeholder='**********@mail.com'>
-            <button type='submit'>Enviar</button>
-          </form>
-    </section>
-
-    <footer>
-      <h2>  "Loja de Suplementos"</h2>
-      <div class="forma-de-pagamento" id="forma-de-pagamento">
-      </div>
-      <div class="outros">
-        <div class="Atendimento" id="Atendimento">
-        </div>
-        <div class="menu-footer" id="menu-footer">
+  <section class="p-5">
+    <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 px-3">
+      <div class="d-flex align-items-center">
+        <div><i class="bi bi-x-diamond fs-1"></i></div>
+        <div>
+          <div class="ms-3 mb-1">PAGUE PELO PIX</div>
+          <div class="texto-menor ms-3">Ganhe 5% OFF em
+            pagamentos via PIX</div>
         </div>
       </div>
-    </footer>
-    <script src="js/main.js"></script>
+
+      <div class="d-flex align-items-center">
+        <div><i class="bi bi-arrow-repeat fs-1"></i></div>
+        <div>
+          <div class="ms-3 mb-1">TROCA GRÁTIS</div>
+          <div class="texto-menor ms-3">Fique livre para trocar em até 30 dias.</div>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <div><i class="bi bi-flower1 fs-1"></i></div>
+        <div>
+          <div class="ms-3 mb-1">SUSTENTABILIDADE</div>
+          <div class="texto-menor ms-3">Produtos sustentaveis, que respeita o meio ambiente.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kits"></section> 
+
+  <section id="Objetivo"></section>
+  
+  <section id="feedback" class="mx-5 rounded-3"></section>
+
+  <section id="instagram" class="mx-5 mt-3 rounded-3" > 
+    <iframe class="rounded-3" id="frame" width="100%" height="400px" style="background-color: #292c31;"  src="https://www.instagram.com/constanciasuplementos/embed" frameborder="0"></iframe>
+  </section>
+  
+  <section id="Cadastro-email" class="mx-5 my-3 rounded-3 py-3 text-center" style="background-color: #ff0f7c; border : 0;">
+    <h5 style="color: #fff;">
+      Cadastre seu E-mail e receba promoções e novidades exclusivas da constancia Suplementos
+    </h5>
+    <div class="input-group my-3 justify-content-center">
+      <form action='/' method='post'>
+        <input type='text' name='pesquisa' placeholder='**********@mail.com'>
+        <button type='submit'>Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="mx-5 p-5 rounded-top" id="footer" style="background-color: #1e0b11; color: #fff;"></section>
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
-</html> 
-
+</html>
