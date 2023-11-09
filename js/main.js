@@ -106,7 +106,7 @@ if(listaCarousel.length != 0){
     <div id="carousel-indicators" class="carousel-indicators"></div>
     
     <!-- The slideshow/carousel -->
-    <div class="carousel-inner px-5" id="carousel-inner"></div>
+    <div class="carousel-inner px-2" id="carousel-inner"></div>
     
     <!-- Left and right controls/icons -->
     <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" >
