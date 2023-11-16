@@ -4,7 +4,7 @@ const lista_link_nav = [
     {
         id : 1 ,
         alt: 'Proteinas' ,
-        href:  '../pages/proteina.html'
+        href:  'pages/proteinas.html'
     },
     {
         id : 2 ,
@@ -51,7 +51,27 @@ if(lista_link_nav.length != 0){
                 </form>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="pages/login.html"><img src="assets/Desktop/menu/login-image.png" alt="login" height="30px" ></a>
+                <div class="dropdown">
+                    <button class="btn border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/Desktop/menu/login-image.png" alt="login" height="30px" >
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end justify-content-center text-center">
+                        <form class="px-4 py-3">
+                          <div class="mb-3">
+                            <label for="exampleDropdownFormEmail1" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleDropdownFormPassword1" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                          </div>
+                          <button type="submit" class="btn btn-primary">Entrar</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./pages/cadastro.html">Novo aqui? Cadastre-se</a>
+                        <a class="dropdown-item" href="#">Esqueceu sua senha?</a>
+                    </div>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="pages/carrinho.html"><img src="assets/Desktop/menu/cart.png" alt="carrinho" height="30px"></a>
@@ -460,3 +480,4 @@ if(lista_link_nav.length != 0 && !isMobile){
         document.getElementById("Atendimento").innerHTML += atendimento;
     }  
 }
+	
