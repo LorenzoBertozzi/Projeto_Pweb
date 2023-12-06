@@ -1,0 +1,11 @@
+{
+    "name": "luiz/web",
+    "description": "Loja de suplementos e-commerce com php",
+    "type": "project",
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "core\\" : "core/"
+        }
+    }
+}
