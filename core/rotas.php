@@ -2,8 +2,12 @@
 #páginas
 $rotas = [
     'home' => 'main@index',
+
     'cadastro' => 'main@cadastro',
-    'carrinho' => 'main@carrinho'
+    'criar_cliente' => 'main@criar_cliente',
+    'confirmar_email' => 'main@confirmar_email',
+    
+    'carrinho' => 'main@carrinho',
 ];
 
 $page = 'home';
@@ -20,7 +24,7 @@ if(isset($_REQUEST['page'])){
 $partes = explode('@', $rotas[$page]);
 
 //Recebe a classe que vou instanciar
-$controlador = 'core\\controladores\\'.ucfirst($partes[0]);
+$controlador = 'core\\controllers\\'.ucfirst($partes[0]);
 $metodo = $partes[1];
 
 //Instancio a Classe e acesso a função

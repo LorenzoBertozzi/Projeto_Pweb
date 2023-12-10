@@ -14,7 +14,7 @@
     <title>Suplementos Store | Cadastro</title>
 
     <!--Icone-->
-    <link rel="shortcut icon" href="../assets/icon.ico">
+    <link rel="shortcut icon" href="./assets/icon.ico">
     
     <!--BootStrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -22,7 +22,7 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     
     <!--CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="text-center rounded-bottom mx-2 row justify-content-center py-3" style="color: #fff;;">
@@ -30,7 +30,7 @@
            <h3 style="text-align: left;">Máximo Potencial Atlético, <br>Saúde & Bem-estar</h3>
         </div>
         <div class="col-4">
-            <a href="?page=home"><img src="../assets/Desktop/menu/logo_constancia.png" alt="Go Home" height="70px"></a>
+            <a href="?page=home"><img src="./assets/Desktop/menu/logo_constancia.png" alt="Go Home" height="70px"></a>
         </div>
         <div class="col-4 d-sm-none d-none d-md-block">
             <a href="https://www.instagram.com/constanciasuplementos" target="_blank" style="text-decoration: none;">
@@ -48,44 +48,54 @@
                 <div class="card-body p-5 text-center">
       
                   <h3 class="mb-5">CADASTRO</h3>
-                  <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+
+                  <form action="?page=criar_cliente" method="post">
+                    <?php //Verifica se as senhas são iguais
+                      if(isset($_SESSION['erro'])):
+                    ?>
+                        <div class="alert alert-danger text-center p-2">
+                          <?= $_SESSION['erro']?>
+                          <?php unset($_SESSION['erro']) //Destroi o aviso apos ele ter sido apresentado ?> 
+                        </div>
+                    <?php endif;?>
+                    
                     <div class="form-outline mb-4">
-                      <input type="text" id="nome-2" class="form-control form-control-lg" />
                       <label class="form-label" for="nome">Seu Nome</label>
+                      <input name="nome" type="text" id="nome-2" class="form-control form-control-lg" />
                     </div>
 
                     <div class="form-outline mb-4">
-                      <input type="email" id="email-2" class="form-control form-control-lg" />
                       <label class="form-label" for="email">E-mail</label>
+                      <input name="email" type="email" id="email-2" class="form-control form-control-lg" />
                     </div>
 
                     <div class="form-outline mb-4">
-                      <input type="tel" id="telefone" class="form-control form-control-lg" />
                       <label class="form-label" for="telefone">Telefone</label>
+                      <input name="tel" type="tel" id="telefone" class="form-control form-control-lg" />
                     </div>
 
                     <div class="form-outline mb-4">
-                      <input type="date" id="data_nascimento" class="form-control form-control-lg" />
                       <label class="form-label" for="data_nascimento">Data de Nascimento</label>
+                      <input name="date_nasc" type="date" id="data_nascimento" class="form-control form-control-lg" />
                     </div>
         
                     <div class="form-outline mb-4">
-                      <input type="password" id="senha" class="form-control form-control-lg" />
                       <label class="form-label" for="senha">Senha</label>
+                      <input name="senha_01" type="password" id="senha" class="form-control form-control-lg" />
                     </div>
-
+                    
                     <div class="form-outline mb-4">
-                      <input type="password" id="confirm_senha" class="form-control form-control-lg" />
                       <label class="form-label" for="confirm_senha">Confirme sua senha</label>
+                      <input name="senha_02" type="password" id="confirm_senha" class="form-control form-control-lg" />
                     </div>
-            
-                    <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>
-        
-                    <hr class="my-4">
-        
-                    <button class="btn btn-lg btn-block btn-primary border-0 " style="background-color: #dd4b39; width: 80%;"
-                      type="submit"><i class="fab fa-google me-2"></i>Entrar com google</button>
-                  </form>
+                    
+                    <input class="btn btn-primary btn-lg btn-block" type="submit" value="Cadastrar">
+                    
+                  </form>        
+                  
+                  <hr class="my-4">                  
+                  <button class="btn btn-lg btn-block btn-primary border-0 " style="background-color: #dd4b39; width: 80%;"
+                    type="submit"><i class="fab fa-google me-2"></i>Entrar com google</button> 
                 </div>
               </div>
             </div>
@@ -93,7 +103,7 @@
         </div>
       </section>
 
-    <script src="./js/main.js"></script>
+    <script src=".\public\js\main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 <?php 

@@ -174,3 +174,6 @@ header{
     border-radius: 10px;
  }
 
+.box-validado{
+    border-color: red;
+}

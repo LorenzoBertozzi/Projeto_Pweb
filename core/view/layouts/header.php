@@ -9,7 +9,7 @@ use core\classes\Database;
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -18,10 +18,10 @@ use core\classes\Database;
   
   <title>Loja de Suplementos</title>
   <!--Icone-->
-  <link rel="shortcut icon" href="..\assets\icon.ico">
+  <link rel="shortcut icon" href=".\assets\icon.ico">
   
   <!--CSS -->
-  <link rel="stylesheet" href="..\css\style.css">
+  <link rel="stylesheet" href=".\css\style.css">
   
   <!--BootStrap-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -36,7 +36,7 @@ use core\classes\Database;
 
   <nav class="navbar navbar-expand-md bg-body px-5 mt-0">
 
-  <a class="navbar-brand" href="?page=home"><img src="../assets/Desktop/menu/logo_constancia.png" alt="Logo" height="70px"></a>
+  <a class="navbar-brand" href="?page=home"><img src="./assets/Desktop/menu/logo_constancia.png" alt="Logo" height="70px"></a>
 
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -62,7 +62,7 @@ use core\classes\Database;
                 <form class="d-flex" role="search">
                     <div class="search-box">  
                         <input type="text" class="search-text" placeholder="Pesquisar...">
-                        <a class="search-btn"><img src="../assets/Desktop/menu/lupa.png" style=" height: 30px;"></a>
+                        <a class="search-btn"><img src="./assets/Desktop/menu/lupa.png" style=" height: 30px;"></a>
                     </div>
                 </form>
             </li><!--Busca-->
@@ -72,7 +72,7 @@ use core\classes\Database;
                 if(Store::cliente_logado()):?>
                   <div class="dropdown">
                     <button class="btn border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src=".\assets\Desktop\menu\user-icon.png" alt="login" height="40px" >
+                        <img src="./assets/Desktop/menu/user-icon.png" alt="login" height="40px" >
                     </button>
                     <div class="dropdown-menu dropdown-menu-end justify-content-center text-center">                        
                         <a class="dropdown-item" href="?page=cadastro">Minha Conta</a>
@@ -84,7 +84,7 @@ use core\classes\Database;
                 <?php else:?>
                 <div class="dropdown">
                     <button class="btn border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../assets/Desktop/menu/login-image.png" alt="login" height="30px" >
+                        <img src="./assets/Desktop/menu/login-image.png" alt="login" height="30px" >
                     </button>
                     <div class="dropdown-menu dropdown-menu-end justify-content-center text-center">
                         <form class="px-4 py-3" method="post" action="./model/login.php">
@@ -106,7 +106,7 @@ use core\classes\Database;
                 <?php endif;?>
             </li><!--Login-->
             <li class="nav-item"><!--Carrinho-->
-                <a class="nav-link" href="?page=carrinho"><img src="../assets/Desktop/menu/cart.png" alt="carrinho" height="30px"></a>
+                <a class="nav-link" href="?page=carrinho"><img src="./assets/Desktop/menu/cart.png" alt="carrinho" height="30px"></a>
             </li><!--Carrinho-->
         </ul>
   </div>

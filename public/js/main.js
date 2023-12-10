@@ -4,22 +4,22 @@ const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 const listaCarousel = [
     {
         id : 0 ,
-        srcImage : '../assets/Desktop/carousel/Carrossel - Whey.jpg',
+        srcImage : './assets/Desktop/carousel/Carrossel - Whey.jpg',
         altImage : 'Proteinas'
     },
     {
         id : 1 ,
-        srcImage : '../assets/Desktop/carousel/Carrossel - Creatinas.png',
+        srcImage : './assets/Desktop/carousel/Carrossel - Creatinas.png',
         altImage : 'Creatinas'
     },
     {
         id : 2 ,
-        srcImage : '../assets/Desktop/carousel/Carrossel - Cachorro.jpg',
+        srcImage : './assets/Desktop/carousel/Carrossel - Cachorro.jpg',
         altImage : 'Vitaminas'
     },
     {
         id : 3,
-        srcImage : '../assets/Desktop/carousel/Carrossel - Acessórios.jpg',
+        srcImage : './assets/Desktop/carousel/Carrossel - Acessórios.jpg',
         altImage : 'Acessórios'
     }
 ];
@@ -140,31 +140,31 @@ if(listaKits.length != 0){
 const listaFeedbacks = [
     {
     id : 1,
-    srcImage : '../assets/########',
+    srcImage : './assets/########',
     nomeUsuario : 'usuario 1',
     Comentario : 'Comentario deixado pelo usuario',
     },
     {
     id : 2,
-    srcImage : '../assets/pfp.jpg',
+    srcImage : './assets/pfp.jpg',
     nomeUsuario : 'usuario 2',
     Comentario : 'Comentario deixado pelo usuario',
     },
     {
     id : 3,
-    srcImage : '../assets/pfp.jpg',
+    srcImage : './assets/pfp.jpg',
     nomeUsuario : 'usuario 3',
     Comentario : 'Comentario deixado pelo usuario',
     },
     {
     id : 3,
-    srcImage : '../assets/pfp.jpg',
+    srcImage : './assets/pfp.jpg',
     nomeUsuario : 'usuario 4',
     Comentario : 'Comentario deixado pelo usuario',
     },
     {
     id : 2,
-    srcImage : '../assets/pfp.jpg',
+    srcImage : './assets/pfp.jpg',
     nomeUsuario : 'usuario 5',
     Comentario : 'Comentario deixado pelo usuario',
     }
@@ -224,25 +224,25 @@ if (isMobile){
     <div class="container row mx-auto g-4 justify-content-center text-center p-5">
       <div class="col-4 col-md-2 col-xxl-6 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 100px; height: 100px;"><a href="-----------------"><img src="../assets/Desktop/objetivos/Muscle.png" alt="Massa Muscular" style="height: 75px;"></a></button>
+          <button style="width: 100px; height: 100px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Muscle.png" alt="Massa Muscular" style="height: 75px;"></a></button>
           <p>Massa Muscular</p>
         </div>
       </div>
       <div class="col-4 col-md-2 col-xxl-6 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 100px; height: 100px;"><a href="-----------------"><img src="../assets/Desktop/objetivos/Measuring tape.png" alt="Emagrecimento" style="height: 60px;"></a></button>
+          <button style="width: 100px; height: 100px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Measuring tape.png" alt="Emagrecimento" style="height: 60px;"></a></button>
           <p>Emagrecimento</p>
         </div>
       </div>
       <div class="col-4 col-md-2 col-xxl-6 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 100px; height: 100px;"><a href="-----------------"><img src="../assets/Desktop/objetivos/Heart.png" alt="Saúde" style="height: 75px;"></a></button>
+          <button style="width: 100px; height: 100px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Heart.png" alt="Saúde" style="height: 75px;"></a></button>
           <p>Saúde</p>
         </div>
       </div>
       <div class="col-4 col-md-2 col-xxl-6 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 100px; height: 100px;"><a href="-----------------"><img src="../assets/Desktop/objetivos/Energy.png" alt="Energia" style="height: 75px;"></a></button>
+          <button style="width: 100px; height: 100px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Energy.png" alt="Energia" style="height: 75px;"></a></button>
           <p>Energia</p>
         </div>
       </div>
@@ -258,25 +258,25 @@ if (isMobile){
     <div class="container row mx-auto g-4 justify-content-center text-center p-5">
       <div class="col-8 col-md-4 col-xxl-2 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 200px; height: 200px;"><a href="-----------------"><img src="../assets/Desktop/objetivos/Muscle.png" alt="Massa Muscular" style="height: 150px;"></a></button>
+          <button style="width: 200px; height: 200px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Muscle.png" alt="Massa Muscular" style="height: 150px;"></a></button>
           <p>Massa Muscular</p>
         </div>
       </div>
       <div class="col-8 col-md-4 col-xxl-2 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 200px; height: 200px;"><a href="-----------------"><img src="../assets/Desktop/objetivos/Measuring tape.png" alt="Emagrecimento" style="height: 120px;"></a></button>
+          <button style="width: 200px; height: 200px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Measuring tape.png" alt="Emagrecimento" style="height: 120px;"></a></button>
           <p>Emagrecimento</p>
         </div>
       </div>
       <div class="col-8 col-md-4 col-xxl-2 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 200px; height: 200px;"><a href="-----------------"><img src="../assets/Desktop/objetivos/Heart.png" alt="Saúde" style="height: 150px;"></a></button>
+          <button style="width: 200px; height: 200px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Heart.png" alt="Saúde" style="height: 150px;"></a></button>
           <p>Saúde</p>
         </div>
       </div>
       <div class="col-8 col-md-4 col-xxl-2 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 200px; height: 200px;"><a href="-----------------"><img src="../assets/Desktop/objetivos/Energy.png" alt="Energia" style="height: 150px;"></a></button>
+          <button style="width: 200px; height: 200px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Energy.png" alt="Energia" style="height: 150px;"></a></button>
           <p>Energia</p>
         </div>
       </div>
