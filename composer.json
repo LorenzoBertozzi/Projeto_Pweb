@@ -1,0 +1,13 @@
+{
+    "name": "luiz/web",
+    "description": "Loja de suplementos e-commerce com php",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload":{
+        "psr-4":{
+            "core\\" : "core/"
+        }
+    }
+}
