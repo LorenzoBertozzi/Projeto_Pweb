@@ -2,6 +2,7 @@
 
 namespace core\controllers;
 
+use core\classes\Database;
 use core\classes\EnviarEmail;
 use core\classes\Functions;
 use core\classes\Store;
@@ -173,6 +174,33 @@ class Main{
             'produtos',
             'layouts/footer',
         ],['produtos'=> $lista_prod]); 
+    }
+
+    //  ######################################################
+    public function prod_unico(){
+        $produtos = new Produtos();
+        $id = $_GET['id'];
+        $produto = $produtos->produto_unico($id);
+
+        Functions::Layout([
+            'layouts/header',
+            'prod_unico',
+            'layouts/footer',
+        ],['produto'=> $produto]); 
+    }
+
+    //  ######################################################
+    public function leads(){
+        $email = $_POST['lead_email'];
+        $bd = new Database();
+        $query = "INSERT INTO leads VALUES(DEFAULT,'.$email.')";
+        $bd->insert($query);
+
+        Functions::Layout([
+            'layouts/header',
+            'layouts/leads_confir',
+            'layouts/footer',
+        ]);
     }
 }
 

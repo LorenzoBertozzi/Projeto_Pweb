@@ -5,22 +5,26 @@ const listaCarousel = [
     {
         id : 0 ,
         srcImage : './assets/Desktop/carousel/Carrossel - Whey.jpg',
-        altImage : 'Proteinas'
+        altImage : 'Proteinas',
+        href     : '?page=produtos&c=proteinas'
     },
     {
         id : 1 ,
         srcImage : './assets/Desktop/carousel/Carrossel - Creatinas.png',
-        altImage : 'Creatinas'
+        altImage : 'Creatinas',
+        href     : '?page=produtos&c=creatinas'
     },
     {
         id : 2 ,
         srcImage : './assets/Desktop/carousel/Carrossel - Cachorro.jpg',
-        altImage : 'Vitaminas'
+        altImage : 'Vitaminas',
+        href     : '?page=produtos&c=vitaminas'
     },
     {
         id : 3,
         srcImage : './assets/Desktop/carousel/Carrossel - Acessórios.jpg',
-        altImage : 'Acessórios'
+        altImage : 'Acessórios',
+        href     : '?page=produtos&c=acessorios'
     }
 ];
 
@@ -65,7 +69,9 @@ if(listaCarousel.length != 0){
             const carousel_image = 
             `
             <div class="carousel-item active">
+              <a href="${carousel.href}">
                 <img src="${carousel.srcImage}" alt="${carousel.altImage}" class="d-block rounded-3" style="width:100% ;">
+              </a>
             </div>
             `
             document.getElementById("carousel-inner").innerHTML += carousel_image; 
@@ -73,7 +79,9 @@ if(listaCarousel.length != 0){
             const carousel_image =
             `
             <div class="carousel-item">
-                <img src="${carousel.srcImage}" alt="${carousel.altImage}" class="d-block rounded-3" style="width:100% ; height: 40%;">
+              <a href="${carousel.href}">
+                <img src="${carousel.srcImage}" alt="${carousel.altImage}" class="d-block   rounded-3" style="width:100% ; height: 40%;">
+              </a>
             </div>
             `
             document.getElementById("carousel-inner").innerHTML += carousel_image;
@@ -84,30 +92,36 @@ if(listaCarousel.length != 0){
 // Kits em destaque-->
 const listaKits = [
     {
-        srcKit : "kit1.jpg",
-        altKit : "kit1"
+        srcKit    : "./assets/kits/kit01.jpg",
+        altKit    : "kit1",
+        ahref_id  : "27"
     },
     {
-        srcKit : "kit2.jpg",
-        altKit : "kit2"
+        srcKit : "./assets/kits/kit02.jpg",
+        altKit : "kit2",
+        ahref_id  : "28"
     },
     {
-        srcKit : "kit3.jpg",
-        altKit : "kit3"
+        srcKit : "./assets/kits/kit01.jpg",
+        altKit : "kit1",
+        ahref_id  : "27"
     },
     {
-        srcKit : "kit4.jpg",
-        altKit : "kit4"
+        srcKit : "./assets/kits/kit02.jpg",
+        altKit : "kit2",
+        ahref_id  : "27"
     },
     {
-        srcKit : "kit1.jpg",
-        altKit : "kit1"
+        srcKit : "./assets/kits/kit01.jpg",
+        altKit : "kit1",
+        ahref_id  : "27"
     },
     {
-        srcKit : "kit1.jpg",
-        altKit : "kit1"
-    }
-];
+        srcKit : "./assets/kits/kit02.jpg",
+        altKit : "kit2",
+        ahref_id  : "27"
+    },
+]; 
 
 if(listaKits.length != 0){
     const cropKits = 
@@ -125,7 +139,7 @@ if(listaKits.length != 0){
                 <img class="bd-placeholder-img card-img-top rounded" width="100%" height="400"  src="${kit.srcKit}" alt="${kit.altKit}"> 
             </div>
             <div class="card-body py-1">
-                    <a href="pages/kits.html" class="btn btn-primary" style="width: 100%; height: 40px; border: 0; border-radius: 5px; background-color: #ef7637;">Ver mais</a>
+                    <a href="?page=prod_unico&id=${kit.ahref_id}" class="btn btn-primary" style="width: 100%; height: 40px; border: 0; border-radius: 5px; background-color: #ef7637;">Ver mais</a>
             </div>
         </div>
         `
@@ -140,33 +154,42 @@ if(listaKits.length != 0){
 const listaFeedbacks = [
     {
     id : 1,
-    srcImage : './assets/########',
-    nomeUsuario : 'usuario 1',
-    Comentario : 'Comentario deixado pelo usuario',
+    srcImage : './assets/feedback/avatar-gen02.jpg',
+    nomeUsuario : 'Fernando',
+    rating : '&#11088;&#11088;&#11088;&#11088;&#11088;',
+    Comentario : 'Ótimos produtos',
     },
+
     {
     id : 2,
-    srcImage : './assets/pfp.jpg',
-    nomeUsuario : 'usuario 2',
-    Comentario : 'Comentario deixado pelo usuario',
+    srcImage : './assets/feedback/avatar-gen01.jpg',
+    nomeUsuario : 'Luiz',
+    rating : '&#11088;&#11088;&#11088;&#11088;&#11088;',
+    Comentario : 'Quem fez o site é muito forte ',
     },
+
     {
     id : 3,
-    srcImage : './assets/pfp.jpg',
-    nomeUsuario : 'usuario 3',
-    Comentario : 'Comentario deixado pelo usuario',
+    srcImage : './assets/feedback/avatar-gen03.jpg',
+    nomeUsuario : 'Guilherme',
+    rating : '&#11088;&#11088;&#11088;&#11088;&#11088;',
+    Comentario : 'Acessórios são muito úteis',
     },
+
     {
-    id : 3,
-    srcImage : './assets/pfp.jpg',
-    nomeUsuario : 'usuario 4',
-    Comentario : 'Comentario deixado pelo usuario',
+    id : 4,
+    srcImage : './assets/feedback/avatar-gen04.jpg',
+    nomeUsuario : 'Lorenzo',
+    rating : '&#11088;&#11088;&#11088;&#11088;&#11088;',
+    Comentario : 'Melhor pré-treino que já comprei',
     },
+
     {
-    id : 2,
-    srcImage : './assets/pfp.jpg',
-    nomeUsuario : 'usuario 5',
-    Comentario : 'Comentario deixado pelo usuario',
+    id : 5,
+    srcImage : './assets/feedback/avatar-gen05.jpg',
+    nomeUsuario : 'Natalia',
+    rating : '&#11088;&#11088;&#11088;&#11088;&#11088;',
+    Comentario : 'Site nota 10',
     }
 ];
 
@@ -183,11 +206,13 @@ if(listaFeedbacks.length > 0){
         const cartaoFeedback = 
         `
         <div class="col-10 col-md-2 col-xxl-2 py-4" id="cartaoFeedback">
-        <div class="card" style="background-color: #292c31; border: 0;">
-        <div class="col-md-12 row d-flex justify-content-center" style="align-self: center;"><img src="${listaFeedbacks[0].srcImage}"></div>
-        <h6 class="col-md-12 row d-flex justify-content-center" style="color: #f5f5f5; margin-top: 50px;"> ${listaFeedbacks[0].nomeUsuario} </h6>
-        <p style="color : #fff; text-transform: initial; margin-top: 50px;"> ${listaFeedbacks[0].Comentario}</p>
-        </div>
+          <div class="card" style="background-color: #292c31; border: 0;">
+            <div class="col-md-12 row d-flex justify-content-center" style="align-self: center;"><img src="${listaFeedbacks[0].srcImage}">
+            </div>
+            <p class="col-md-12 row d-flex justify-content-center" style="color: #f5f5f5; margin-top: 50px;"> ${listaFeedbacks[0].rating}</p>
+            <h6 class="col-md-12 row d-flex justify-content-center" style="color: #f5f5f5; margin-top: 50px;"> ${listaFeedbacks[0].nomeUsuario}</h6>
+            <p style="color : #fff; text-transform: initial; margin-top: 50px;"> ${listaFeedbacks[0].Comentario}</p>
+          </div>
         </div>    
         `
         document.getElementById("feedback-layout").innerHTML += cartaoFeedback; 
@@ -198,12 +223,14 @@ if(listaFeedbacks.length > 0){
             const cartaoFeedback = 
             `
             <div class="col-12 col-md-2 col-xxl-2 py-4" id="cartaoFeedback">
-                <div class="card mx-2" style="background-color: #292c31; border: 0;">
-                    <div class="col-md-12 row d-flex justify-content-center" style="align-self: center;"><img src="${feedback.srcImage}"></div>
-                    <h6 class="col-md-12 row d-flex justify-content-center" style="color: #f5f5f5; margin-top: 50px;"> ${feedback.nomeUsuario} </h6>
-                    <p style="color : #fff; text-transform: initial; margin-top: 50px;"> ${feedback.Comentario}</p>
-                </div>
-            </div>    
+              <div class="card mx-2" style="background-color: #292c31; border: 0;">
+                  <img class="card-img-top rounded-circle mx-auto d-block mt-3" src=${feedback.srcImage} alt="Card image" style="height: 100px;width: 100px;">
+                  <div class="card-body" style="color:#fff ;">
+                      <h4 class="card-title text-center my-3">${feedback.nomeUsuario}</h4>
+                      <p class="card-text">${feedback.Comentario}</p>
+                  </div>
+              </div>
+          </div>    
             `
             document.getElementById("feedback-layout").innerHTML += cartaoFeedback; 
             if(cont >= 5){
@@ -224,25 +251,25 @@ if (isMobile){
     <div class="container row mx-auto g-4 justify-content-center text-center p-5">
       <div class="col-4 col-md-2 col-xxl-6 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 100px; height: 100px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Muscle.png" alt="Massa Muscular" style="height: 75px;"></a></button>
+          <button style="width: 100px; height: 100px;"><a href="?page=produtos&c=proteinas"><img src="./assets/Desktop/objetivos/Muscle.png" alt="Massa Muscular" style="height: 75px;"></a></button>
           <p>Massa Muscular</p>
         </div>
       </div>
       <div class="col-4 col-md-2 col-xxl-6 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 100px; height: 100px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Measuring tape.png" alt="Emagrecimento" style="height: 60px;"></a></button>
+          <button style="width: 100px; height: 100px;"><a href="?page=produtos&c=vitaminas"><img src="./assets/Desktop/objetivos/Measuring tape.png" alt="Emagrecimento" style="height: 60px;"></a></button>
           <p>Emagrecimento</p>
         </div>
       </div>
       <div class="col-4 col-md-2 col-xxl-6 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 100px; height: 100px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Heart.png" alt="Saúde" style="height: 75px;"></a></button>
+          <button style="width: 100px; height: 100px;"><a href="?page=produtos&c=vitaminas"><img src="./assets/Desktop/objetivos/Heart.png" alt="Saúde" style="height: 75px;"></a></button>
           <p>Saúde</p>
         </div>
       </div>
       <div class="col-4 col-md-2 col-xxl-6 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 100px; height: 100px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Energy.png" alt="Energia" style="height: 75px;"></a></button>
+          <button style="width: 100px; height: 100px;"><a href="?page=produtos&c=pretreino"><img src="./assets/Desktop/objetivos/Energy.png" alt="Energia" style="height: 75px;"></a></button>
           <p>Energia</p>
         </div>
       </div>
@@ -258,25 +285,25 @@ if (isMobile){
     <div class="container row mx-auto g-4 justify-content-center text-center p-5">
       <div class="col-8 col-md-4 col-xxl-2 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 200px; height: 200px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Muscle.png" alt="Massa Muscular" style="height: 150px;"></a></button>
+          <button style="width: 200px; height: 200px;"><a href="?page=produtos&c=proteinas"><img src="./assets/Desktop/objetivos/Muscle.png" alt="Massa Muscular" style="height: 150px;"></a></button>
           <p>Massa Muscular</p>
         </div>
       </div>
       <div class="col-8 col-md-4 col-xxl-2 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 200px; height: 200px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Measuring tape.png" alt="Emagrecimento" style="height: 120px;"></a></button>
+          <button style="width: 200px; height: 200px;"><a href="?page=produtos&c=vitaminas"><img src="./assets/Desktop/objetivos/Measuring tape.png" alt="Emagrecimento" style="height: 120px;"></a></button>
           <p>Emagrecimento</p>
         </div>
       </div>
       <div class="col-8 col-md-4 col-xxl-2 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 200px; height: 200px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Heart.png" alt="Saúde" style="height: 150px;"></a></button>
+          <button style="width: 200px; height: 200px;"><a href="?page=produtos&c=vitaminas"><img src="./assets/Desktop/objetivos/Heart.png" alt="Saúde" style="height: 150px;"></a></button>
           <p>Saúde</p>
         </div>
       </div>
       <div class="col-8 col-md-4 col-xxl-2 mx-1 text-center">
         <div class="objetivo-btn">
-          <button style="width: 200px; height: 200px;"><a href="-----------------"><img src="./assets/Desktop/objetivos/Energy.png" alt="Energia" style="height: 150px;"></a></button>
+          <button style="width: 200px; height: 200px;"><a href="?page=produtos&c=pretreino"><img src="./assets/Desktop/objetivos/Energy.png" alt="Energia" style="height: 150px;"></a></button>
           <p>Energia</p>
         </div>
       </div>

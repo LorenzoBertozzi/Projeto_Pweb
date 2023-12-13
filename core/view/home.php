@@ -57,8 +57,8 @@
       Cadastre seu E-mail e receba promoções e novidades exclusivas da constancia Suplementos
     </h5>
     <div class="input-group my-3 justify-content-center">
-      <form action='/' method='post'>
-        <input type='text' name='pesquisa' placeholder='seu_email@mail.com'>
+      <form action='?page=leads' method='post'>
+        <input type='text' name='lead_email' placeholder='seu_email@mail.com'>
         <button type='submit'>Enviar</button>
       </form>
     </div>

@@ -35,7 +35,7 @@ class Cliente{
             ':senha'         => password_hash($post['senha_01'], PASSWORD_DEFAULT), 
             ':purl'          => $purl
         ];
-        $query = "INSERT INTO usuarios VALUES(DEFAULT, :email, :senha, :nome, :tel, :date_nasc, :purl, DEFAULT, NOW() , NOW() )";
+        $query = "INSERT INTO usuarios VALUES(DEFAULT, :email, :senha, :nome, :tel, :date_nasc,NULL, :purl, DEFAULT, NOW() , NULL)";
         $bd = new Database();
         $bd->insert($query, $args);
 

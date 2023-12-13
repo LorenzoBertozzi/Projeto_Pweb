@@ -15,8 +15,12 @@ $rotas = [
     //Carrinho
     'carrinho' => 'main@carrinho',
 
+    //Lead
+    'leads' => 'main@leads',
+
     //Produtos
     'produtos' => 'main@produtos',
+    'prod_unico' => 'main@prod_unico',
 ];
 
 $page = 'home';

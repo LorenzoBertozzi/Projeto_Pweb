@@ -14,6 +14,14 @@ class Produtos{
         return $produtos;
     }
 
+    public function produto_unico($id){
+        $bd = new Database();
+        $query = "SELECT * FROM produtos WHERE visivel = 1 AND id_prod = '$id'";
+        $produtos = $bd->select($query);
+        
+        return $produtos;
+    }
+
 }
 
 
