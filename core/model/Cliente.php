@@ -28,12 +28,12 @@ class Cliente{
         //METER NO BANCO DE DADOS
         $purl = Store::criar_Hash(); #purl = person url
         $args =  [
-            ':nome' => strtolower(trim($post['nome'])), 
-            ':email' => strtolower(trim($post['email'])), 
-            ':tel' => strtolower(trim($post['tel'])), 
-            ':date_nasc' => date($post['date_nasc']), 
-            ':senha' => password_hash($post['senha_01'], PASSWORD_DEFAULT), 
-            ':purl' => $purl
+            ':nome'          => strtolower(trim($post['nome'])), 
+            ':email'         => strtolower(trim($post['email'])), 
+            ':tel'           => strtolower(trim($post['tel'])), 
+            ':date_nasc'     => date($post['date_nasc']),
+            ':senha'         => password_hash($post['senha_01'], PASSWORD_DEFAULT), 
+            ':purl'          => $purl
         ];
         $query = "INSERT INTO usuarios VALUES(DEFAULT, :email, :senha, :nome, :tel, :date_nasc, :purl, DEFAULT, NOW() , NOW() )";
         $bd = new Database();

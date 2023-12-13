@@ -16,7 +16,7 @@ $rotas = [
     'carrinho' => 'main@carrinho',
 
     //Produtos
-    'proteinas' => 'main@proteinas',
+    'produtos' => 'main@produtos',
 ];
 
 $page = 'home';

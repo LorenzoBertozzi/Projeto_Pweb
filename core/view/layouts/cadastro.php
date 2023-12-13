@@ -91,11 +91,7 @@
                     
                     <input class="btn btn-primary btn-lg btn-block" type="submit" value="Cadastrar">
                     
-                  </form>        
-                  
-                  <hr class="my-4">                  
-                  <button class="btn btn-lg btn-block btn-primary border-0 " style="background-color: #dd4b39; width: 80%;"
-                    type="submit"><i class="fab fa-google me-2"></i>Entrar com google</button> 
+                  </form>           
                 </div>
               </div>
             </div>

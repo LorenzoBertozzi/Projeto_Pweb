@@ -2,7 +2,6 @@
 
 namespace core\controllers;
 
-use core\classes\Database;
 use core\classes\EnviarEmail;
 use core\classes\Functions;
 use core\classes\Store;
@@ -86,7 +85,6 @@ class Main{
         }
         else
             echo "Falha ao enviar e-mail";
-
     }
 
     //  ######################################################
@@ -149,6 +147,7 @@ class Main{
             $this->index();
         }else{
             $_SESSION['cliente'] = $result->id;
+            $_SESSION['foto'] = base64_encode($result->img_perfil);
             $_SESSION['usuario'] = $result->email;
             $_SESSION['nome'] = $result->nome;
             $this->index();
@@ -163,20 +162,15 @@ class Main{
         $this->index();
     }
 
-    public function proteinas(){
+    //  ######################################################
+    public function produtos(){
         $produtos = new Produtos();
-        $categoria = 'proteinas';
+        $categoria = $_GET['c'];
         $lista_prod = $produtos->lista_produtos($categoria);
-
-        /* 
-        $imagemBlob = $lista_prod[0]->img_prod;
-        $imagemData = base64_encode($imagemBlob);
-        echo '<img src="data:image/jpeg;base64,'.$imagemData.'" alt="Imagem do Banco de Dados">';
-        */
 
         Functions::Layout([
             'layouts/header',
-            'proteinas',
+            'produtos',
             'layouts/footer',
         ],['produtos'=> $lista_prod]); 
     }
